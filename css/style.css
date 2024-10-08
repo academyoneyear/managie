@@ -35,30 +35,38 @@ nav .sidebyside{
 
 }
 
+nav .nav_item{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 60px;
+}
+
 
 nav ul{
-   
+    display: contents;
     font-weight: 400;
 }
 
 nav ul li{
     position: relative;
-    display: inline-block;
-    margin-right: 60px;
+    cursor: pointer;
 }
 
-nav ul li:last-child{
-    margin-right: 0;
-}
+
 
 nav ul li:after{
-    width: 100%;
+    width: 0%;
     height: 1px;
     background: #fff;
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
+    transition: .4s;
+}
+
+nav ul li:hover:after{
+    width: 99%;
 }
 
 nav .logo{
