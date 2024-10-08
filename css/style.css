@@ -20,9 +20,15 @@ a{
 /* common css end */
 
 /* font-family: "Inter", sans-serif; */
+/* font-family: "Space Grotesk", sans-serif; */
+
+/* nav start */
 
 nav{
-    background: #394792;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 100%;
     color: #fff;
     font-family: "Inter", sans-serif;
     font-size: 18px;
@@ -95,3 +101,176 @@ nav a{
 nav a:hover{
     border-color: #fff;
 }
+
+/* nav end */
+
+/* banner start */
+
+#banner {
+    background: #394792;
+    color: #fff;
+    padding-top: 210px;
+    padding-bottom: 135px;
+}
+
+#banner .sidebyside {
+    display: grid;
+    grid-template-columns: 62% 38%;
+}
+
+#banner .left h1{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    position: relative
+}
+
+#banner .left h1 .shape {
+    width: 222px;
+    position: absolute;
+    bottom: -6px;
+    right: 18px;
+}
+
+#banner .left h1 .arrow {
+    width: 91px;
+    position: absolute;
+    top: 39px;
+    right: -69px;
+}
+
+
+#banner .left > p{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    max-width: 617px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+    line-height: 170%;
+}
+
+
+#banner .left a{
+    color: #fff;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 16px 40px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-right: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #394792;
+}
+
+#banner .left a:hover{
+    background: transparent;
+    color: #fff;
+}
+
+
+
+
+
+#banner .left .info{
+    display: grid;
+    grid-template-columns: repeat(3,90px);
+    margin-top: 60px;
+    gap: 80px;
+}
+
+#banner .left .info .item{
+    position: relative;
+}
+
+#banner .left .info .item:after {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    width: 1px;
+    height: 62px;
+    background: rgba(255, 255, 255,.16);
+    content: "";
+    transform: translateY(-50%);
+}
+
+#banner .left .info .item:last-child::after{
+    display: none;
+}
+
+#banner .left .info h3{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#banner .left .info p{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 86px;
+    line-height: 150%;
+    margin-top: 8px;
+}
+
+#banner .right img {
+    width: 578.56px;
+    position: relative;
+    left: -62px;
+    top: 210px;
+}
+
+
+/* banner end */
+
+/* management start */
+
+#management{
+    margin-top: 100px;
+}
+
+#management h2{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#management h2 img{
+    width: 162px;
+    position: relative;
+    top: -31px;
+    left: -46px;
+}
+
+#management .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(3, 379px);
+    gap: 32px;
+    margin-top: 64px;
+}
+
+#management .item img{
+    width: 100%;
+}
+
+#management .item h3{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+#management .item p{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+}
+/* management end */
