@@ -31,17 +31,46 @@ nav{
 nav .sidebyside{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    align-items: center;
+
 }
 
 
 nav ul{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+   
     font-weight: 400;
+}
+
+nav ul li{
+    position: relative;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+nav ul li:after{
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+nav .logo{
+    justify-self: center;
 }
 
 nav img{
     height: 32px;
+}
+
+nav .button{
+    justify-self: end;
 }
 
 nav a{
@@ -52,6 +81,8 @@ nav a{
     border-radius: 30px;
     transition: .4s;
 }
+
+
 
 nav a:hover{
     border-color: #fff;
