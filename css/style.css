@@ -274,3 +274,64 @@ nav a:hover{
     line-height: 140%;
 }
 /* management end */
+
+/* others start */
+#others{
+    margin-top: 100px;
+}
+
+#others .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(2,49%);
+    gap:117px
+}
+
+#others .left img{
+    width: 100%;
+}
+
+#others .right h2{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+#others .right p{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+    max-width: 522px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+#others .right ul{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: grid;
+    gap: 34px;
+    align-items: center;
+}
+
+#others .right ul li{
+    display: grid;
+    grid-template-columns: 60px auto;
+    align-items: center;
+    border: 1px solid rgba(35, 35, 35,.16);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+
+
+#others .right ul img{
+    width: 44px;
+    height: 44px;
+    
+}
+
+
+/* others end */
